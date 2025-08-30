@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora Studio · Caso de estudio</title>
+  <meta name="description" content="Caso de estudio resuelto: cómo se mapean las user stories a secciones del sitio.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="brand" href="index.html">Aurora<span class="brand-accent">Studio</span></a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyecto.html" aria-current="page">Proyecto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <article class="container">
+      <header class="page-header">
+        <h1>Caso de estudio: “Aurora Studio”</h1>
+        <p class="lede">Cómo traducimos <strong>user stories</strong> del brief a secciones concretas del sitio.</p>
+      </header>
+
+      <!-- RESUELTO: Trazabilidad user story → sección -->
+      <section aria-labelledby="mapa-trazabilidad" class="trace">
+        <h2 id="mapa-trazabilidad">Trazabilidad (user story → sección)</h2>
+        <ol>
+          <li><strong>US1</strong>: Como visitante nuevo quiero entender qué ofrece el sitio en 5s → <em>Hero + Qué hacemos</em>.</li>
+          <li><strong>US2</strong>: Como potencial cliente quiero ver 3 casos con resultados → <em>Galería de tarjetas + KPIs</em>.</li>
+          <li><strong>US3</strong>: Como cliente listo para iniciar, quiero contactar rápido → <em>CTA visible + Página de contacto</em>.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="servicios">
+        <h2 id="servicios">Servicios</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-body">
+              <h3>Landing accesible</h3>
+              <p>Arquitectura semántica, foco visible y performance para campañas.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Micrositios responsive</h3>
+              <p>Mobile-first con Grid/Flex, tipografía fluida y componentes reutilizables.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Formularios A11y+</h3>
+              <p>Etiquetas, ayudas, validación nativa y estados de error visibles.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="galeria">
+        <h2 id="galeria">Galería de casos</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <img class="card-img" src="https://placehold.co/600x400" width="600" height="400" alt="Mockup del micrositio 'Solaris' en móvil y escritorio.">
+            <div class="card-body">
+              <h3>Solaris</h3>
+              <p>Micrositio educativo. Mejora de contraste y navegación por teclado.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://placehold.co/600x400" width="600" height="400" alt="Vista de un panel de métricas mostrando KPIs mejorados.">
+            <div class="card-body">
+              <h3>Atlas KPIs</h3>
+              <p>Reestructuración semántica + alt en imágenes → +38% tiempo en página.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://placehold.co/600x400" width="600" height="400" alt="Formulario simple con etiquetas sobre los campos.">
+            <div class="card-body">
+              <h3>Nébula Forms</h3>
+              <p>Formulario accesible con ayudas y foco claro. Tasa de error ‑21%.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta container">
+        <h2>¿Te gustaría algo así?</h2>
+        <p>Podemos adaptar esta estructura a tu proyecto en menos de una semana.</p>
+        <a class="button" href="contacto.html">Hablemos</a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="anio">2025</span> Aurora Studio.</p>
+    </div>
+  </footer>
+</body>
+</html>

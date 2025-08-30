@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora Studio · Contacto</title>
+  <meta name="description" content="Formulario accesible para iniciar un proyecto.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="brand" href="index.html">Aurora<span class="brand-accent">Studio</span></a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="container">
+      <h1>Contacto</h1>
+      <!-- RESUELTO: ayuda del formulario con aria-describedby -->
+      <form class="form" id="contactForm" aria-describedby="ayuda-form">
+        <p id="ayuda-form">Los campos marcados con <span aria-hidden="true">*</span> son obligatorios. No compartimos tus datos.</p>
+
+        <div class="form-control">
+          <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+          <input id="nombre" name="nombre" type="text" required autocomplete="name" placeholder="Tu nombre y apellido">
+        </div>
+
+        <div class="form-control">
+          <label for="email">Correo <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div class="form-control">
+          <label for="asunto">Asunto</label>
+          <input id="asunto" name="asunto" type="text" placeholder="Breve descripción del proyecto">
+        </div>
+
+        <div class="form-control">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos objetivos, público y plazos estimados."></textarea>
+        </div>
+
+        <div class="form-control form-check">
+          <input id="acepto" name="acepto" type="checkbox" required>
+          <label for="acepto">Acepto ser contactado por correo <span aria-hidden="true">*</span></label>
+        </div>
+
+        <!-- <p></p> vacío para guardar status de respuesta -->
+        <p id="form-status" aria-live="polite"></p>
+        <button class="button" id="submitButton" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <aside class="container note">
+      <h2>¿Qué pasa después?</h2>
+      <p>Te responderemos en 24–48 h con una guía de próximos pasos y un checklist de accesibilidad inicial.</p>
+    </aside>
+
+    <!-- Agrego un link a un script -->
+    <script src="js/form.js" defer></script>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="anio">2025</span> Aurora Studio.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora Studio · Diseño Multimedia</title>
+  <meta name="description" content="Aurora Studio: micrositio de ejemplo resuelto para práctica de HTML, CSS y accesibilidad.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- RESUELTO: Skip link operativo -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="brand" href="index.html">Aurora<span class="brand-accent">Studio</span></a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="hero container">
+      <!-- RESUELTO: Mensaje de valor claro en <h1> + CTA -->
+      <h1>Diseño multimedia claro, accesible y responsive</h1>
+      <p>En <strong>Aurora Studio</strong> ayudamos a equipos a publicar sitios y apps web que se entienden en 5 segundos, funcionan en móviles y son navegables con teclado.</p>
+      <div class="hero-cta">
+        <a class="button" href="proyecto.html">Ver caso de estudio</a>
+        <a class="button button-ghost" href="contacto.html">Empezar un proyecto</a>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>Qué hacemos</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <img class="card-img" src="https://placehold.co/600x400" width="600" height="400" alt="Captura de un sitio con encabezados y secciones bien definidas.">
+          <div class="card-body">
+            <h3>Semántica impecable</h3>
+            <p>Estructuras claras con landmarks y jerarquías de encabezados que mejoran SEO y accesibilidad.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://placehold.co/600x400" width="600" height="400" alt="Persona usando el teclado para navegar un sitio con foco visible.">
+          <div class="card-body">
+            <h3>Accesibilidad real</h3>
+            <p>Contraste adecuado, foco visible, formularios etiquetados y navegación por teclado sin sorpresas.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://placehold.co/600x400" width="600" height="400" alt="Diseño que se adapta de una columna en mobile a tres columnas en desktop.">
+          <div class="card-body">
+            <h3>Responsive de verdad</h3>
+            <p>Mobile‑first con Flexbox y Grid. Tipografías y espacios fluidos usando <code>clamp()</code>.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="social-proof container">
+      <h2>Resultados</h2>
+      <ul class="kpis" role="list">
+        <li><strong>+38%</strong> tiempo en página</li>
+        <li><strong>‑32%</strong> tasa de rebote</li>
+        <li><strong>AA</strong> checklist WCAG esencial</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="anio">2025</span> Aurora Studio. Sitio de ejemplo para docencia.</p>
+    </div>
+  </footer>
+</body>
+</html>
